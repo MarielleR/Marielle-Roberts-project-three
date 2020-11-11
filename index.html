@@ -6,6 +6,7 @@
     <title>The Viral Twitter Machine</title>
     <!-- Google Font -->
     <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5a7eceb3e6.js" crossorigin="anonymous"></script>
     <!-- CSS Link -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -16,7 +17,7 @@
     </header>
 
     <main>
-        <form action="">
+        <form action="" class="tweet-gen">
             <fieldset>
                 <input type="radio" name="topic" id="code" value="code">
                 <label for="code">Code</label>
@@ -27,7 +28,30 @@
                 <input type="radio" name="topic" id="pop-culture" value="pop-culture">
                 <label for="pop-culture">Pop Culture</label>
             </fieldset>
+
+            <div class="button-container">
+                    <input type="submit" value="GENERATE MY TWEET!">
+                    <label for="submit" class="sr-only"></label>
+            </div>
         </form>
+
+        <div class="your-tweet">
+            <div class="row-1">
+                <img src="" alt="">
+                <div class="handle">
+                    <h3>FirstName LastName</h2>
+                    <h4>@username</h4>
+                </div>
+                <a href="https://twitter.com/m_robertz">Follow Me</a>
+            </div>
+            <div class="row-2">
+                <div class="dynamic-tweet">
+                    <p></p>
+                </div>
+                <h4>12:04 PM - 16 November 2021</h4>
+                <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+            </div>
+        </div>
     </main>
 
     <footer>
