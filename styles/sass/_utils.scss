@@ -1,0 +1,21 @@
+//Color pallette
+$primaryBackgroundColor: #bfc5d9;
+$secondaryBackgroundColor: #ffffff;
+$accentColor: #1da1f2;
+$primaryFontColor: #1e2333;
+$secondaryFontColor: #808bb3;
+
+//Fonts
+
+$rubik:'Rubik', sans-serif;
+$roboto:'Roboto', sans-serif;
+
+//Mixin for Font Specifications
+@mixin fontSpecs($font, $size, $weight, $color:$primaryFontColor ) {
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+};
+
+//Add Animations below

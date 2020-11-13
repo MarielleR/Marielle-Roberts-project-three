@@ -240,6 +240,77 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #1e2333;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 1.5;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #1e2333;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #1e2333;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #1e2333;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #808bb3;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #1e2333;
+}
+
+.gen-btn {
+  font-family: "Rubik", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #1e2333;
+}
+
+.follow-btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #1da1f2;
+}
+
+.fa-twitter-square {
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #1da1f2;
+}
+
 /* GLOBAL STYLES */
 * {
   padding: 0;
