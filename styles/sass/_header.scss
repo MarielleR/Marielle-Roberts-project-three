@@ -1,0 +1,49 @@
+.header-gen {
+    background-color: $primaryBackgroundColor;
+    display: inline-block;
+    width: 60%;
+    // margin-left: 20%;
+    // margin-right: 20%;
+    // margin-top: 2%;
+    // margin-bottom: 5%;
+    margin: 2% 20% 5% 20%; 
+    text-align: center;
+    border: $secondaryFontColor;
+    border-radius: 3%;
+        & h2 {
+            padding-bottom: 30px;
+        }
+            & label {
+                padding: 10px;
+            }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.radio-1,
+.radio-2,
+.radio-3 {
+    padding-left: 40%;
+    padding-bottom: 30px;
+}
+
+.button-container {
+    padding-bottom: 20px;
+        & input {
+            padding: 5px;
+            border-radius: 3%;
+        }
+}
+
+a:hover,
+a:focus,
+input:hover,
+input:focus,
+label:hover,
+label:focus {
+    color: $accentColor;
+}

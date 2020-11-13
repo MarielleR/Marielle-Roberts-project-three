@@ -20,11 +20,11 @@ h2 {
 }
 
 h3 {
-    @include fontSpecs ($roboto, 3rem, 500, $primaryFontColor);
+    @include fontSpecs ($roboto, 2rem, 500, $primaryFontColor);
 }
 
 h4 {
-    @include fontSpecs ($roboto, 2rem, 500, $secondaryFontColor);
+    @include fontSpecs ($roboto, 1.6rem, 500, $secondaryFontColor);
 }
 
 //labels, buttons, icon
