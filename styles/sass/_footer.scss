@@ -1,0 +1,9 @@
+footer {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+        & a {
+            transform: rotate(20deg);;
+        }
+}

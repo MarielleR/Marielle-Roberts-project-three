@@ -24,7 +24,7 @@ h3 {
 }
 
 h4 {
-    @include fontSpecs ($roboto, 1.6rem, 500, $secondaryFontColor);
+    @include fontSpecs ($roboto, 1.4rem, 500, $secondaryFontColor);
 }
 
 //labels, buttons, icon

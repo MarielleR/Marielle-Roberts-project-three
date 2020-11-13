@@ -6,14 +6,40 @@
     text-align: left;
     border: 1px $accentColor solid;
     padding: 45px;
+    box-shadow: 10px 10px 15px $primaryBackgroundColor;
 }
 
 img {
-    height: 4.2rem;
-    width: 4.2rem;
+    height: 5rem;
+    width: 4.5rem;
     border-radius: 50%;
 }
 
 .row-1 {
     display: flex;
+    margin-bottom: 15px;
+}
+.handle {
+    margin-left: 35px;
+}
+
+.follow-btn {
+    border: 2px solid $accentColor;
+    padding: 10px 15px 10px 15px;
+    margin-left: 210px;
+    position: relative;
+    bottom: 30px;
+}
+
+.follow-btn:hover {
+    background-color: $primaryBackgroundColor;
+}
+
+//Dynamic Text Styles
+
+
+//Row-3
+.row-3 h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
