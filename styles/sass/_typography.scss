@@ -12,11 +12,11 @@ h4 {
 }
 
 h1 {
-    @include fontSpecs ($rubik, 4rem, 500, $primaryFontColor);
+    @include fontSpecs ($rubik, 4rem, 500, $primaryBackgroundColor);
 }
 
 h2 {
-    @include fontSpecs ($rubik, 3rem, 500, $primaryFontColor);
+    @include fontSpecs ($rubik, 3rem, 500, $primaryBackgroundColor);
 }
 
 h3 {
@@ -29,7 +29,7 @@ h4 {
 
 //labels, buttons, icon
 label {
-    @include fontSpecs ($roboto, 2.5rem, 400, $primaryFontColor);
+    @include fontSpecs ($roboto, 2.5rem, 400, $primaryBackgroundColor);
 }
 
 .gen-btn {

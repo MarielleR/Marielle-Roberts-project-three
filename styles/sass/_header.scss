@@ -1,12 +1,13 @@
 .header-gen {
-    background-color: $primaryBackgroundColor;
+    background-color: $accentColor;
+    color: $secondaryBackgroundColor;
     display: inline-block;
     width: 60%;
     // margin-left: 20%;
     // margin-right: 20%;
     // margin-top: 2%;
     // margin-bottom: 5%;
-    margin: 2% 20% 5% 20%; 
+    margin: 1% 20% 3% 20%; 
     text-align: center;
     border: $secondaryFontColor;
     border-radius: 3%;
@@ -33,6 +34,7 @@ form {
 
 .button-container {
     padding-bottom: 20px;
+    margin-left: 30%;
         & input {
             padding: 5px;
             border-radius: 3%;
@@ -45,5 +47,10 @@ input:hover,
 input:focus,
 label:hover,
 label:focus {
+    color: $primaryFontColor;
+}
+
+.gen-btn:hover,
+.gen-btn:focus {
     color: $accentColor;
 }

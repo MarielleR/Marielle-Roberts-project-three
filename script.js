@@ -7,35 +7,35 @@
 const viralTweets = {
     code: [
         {
-            tweet: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: '1Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
         },
         {
-            tweet: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: '2Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
         },
         {
-            tweet: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: '3Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
         },
     ],
     politics: [
         {
-            tweet: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: '4Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
         },
         {
-            tweet: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: '5Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
         },
         {
-            tweet: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: '6Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
         },
     ],
     culture: [
         {
-            tweet: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: '7Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
         },
         {
-            tweet: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: '8Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
         },
         {
-            tweet: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: '9Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
         },
     ]
 };
@@ -52,24 +52,17 @@ $('form').on('submit', function(event) {
     event.preventDefault();
     console.log('intialize', event);
 
-    const code = $('input[name=code]:checked').val();
-    const politics = $$('input[name=politics]:checked').val();
-    const culture = $('input[name=code]:checked').val();
+    const topic = $('input[name=topic]:checked').val();
+    // console.log(topic);
 
-    const selection = viralTweets[tweets];
-    const output = [];
-
-    for(let i = 0; i < selection.length; i++) {
-        const tweetSelected = selection[i];
-
-        if(tweetSelected.tweet === code || politics || culture) {
-            output.push(tweetSelected);
-        }
-    }
+    const selection = viralTweets[topic];
+    // console.log(selection);
 
     //Display function down here
-    const displayTweet = randomTweet(output);
-    
+    const displayTweet = randomTweet(selection);
+    console.log(displayTweet.tweet);
+
+    $('.dynamic-tweet').html(`<p>${displayTweet.tweet}</p>`);
 })
 
 });
