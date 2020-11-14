@@ -61,17 +61,13 @@ function randomTweet(outputArray) {
 //event listener for topic selection/dynamic html
 $('form').on('submit', function(event) {
     event.preventDefault();
-    console.log('intialize', event);
 
     const topic = $('input[name=topic]:checked').val();
-    // console.log(topic);
 
     const selection = viralTweets[topic];
-    // console.log(selection);
 
     //Display function down here
     const displayTweet = randomTweet(selection);
-    console.log(displayTweet.tweet);
 
     $('.dynamic-tweet').html(`<p>${displayTweet.tweet}</p>`);
 })
