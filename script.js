@@ -7,40 +7,44 @@
 const viralTweets = {
     code: [
         {
-            tweet: '1Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: 'JUNIOR DEVELOPER WANTED: Must have all the experience of a senior developer, but be content with a tiny salary.'
         },
         {
-            tweet: '2Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: 'Want to travel back in time and fight yourself? Web development is the career for you!'
         },
         {
-            tweet: '3Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: 'After years of being a developer, it seems the answer to every coding question is: it depends...'
         },
     ],
     politics: [
         {
-            tweet: '4Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: 'How does one book a landscaping store as a venue?'
         },
         {
-            tweet: '5Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: 'Tried on an old jacket and it does not fit. I refuse to believe results. Clearly there has been widespread fraud.'
         },
         {
-            tweet: '6Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: 'Things that Election 2020 in the US and The Notebook have in common: mail that was not received, a white house, a lot of arguments, it is not over, it still is not over.'
         },
     ],
     culture: [
         {
-            tweet: '7Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: 'These cannot be the same men Dolly Parton begged Jolene not to take.'
         },
         {
-            tweet: '8Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: 'In Oceans 11 it was one persons job to give someone a suitcase and another persons job to do acrobatics inside a vault. WHY DID THEY GET THE SAME PAYOUT?'
         },
         {
-            tweet: '9Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit dolorum molestias nemo soluta iusto sunt quae illo aspernatur culpa doloribus!'
+            tweet: 'Millenials DO NOT have printers at home. Please stop asking us to print things.'
         },
     ]
 };
 
 $(document).ready(function () {
+
+$("i").on('click', function(){
+    $(this).css("color", "orangered");
+});
 
 //randomize function up here
 function randomTweet(outputArray) {

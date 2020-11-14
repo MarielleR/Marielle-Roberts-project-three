@@ -419,6 +419,11 @@ label:focus {
   color: #1da1f2;
 }
 
+[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
 .your-tweet-container {
   background-color: #ffffff;
   display: inline-block;
