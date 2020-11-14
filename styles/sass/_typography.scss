@@ -1,5 +1,5 @@
 body {
-    @include fontSpecs ($rubik, 1.6rem, 400, $primaryFontColor);
+    @include fontSpecs ($shadowsLight, 1.6rem, 400, $primaryFontColor);
 }
 
 //H's
@@ -12,11 +12,11 @@ h4 {
 }
 
 h1 {
-    @include fontSpecs ($rubik, 4rem, 500, $primaryBackgroundColor);
+    @include fontSpecs ($shadowsLight, 4.5rem, 500, $secondaryBackgroundColor);
 }
 
 h2 {
-    @include fontSpecs ($rubik, 3rem, 500, $primaryBackgroundColor);
+    @include fontSpecs ($shadowsLight, 3.5rem, 500, $secondaryBackgroundColor);
 }
 
 h3 {
@@ -27,13 +27,13 @@ h4 {
     @include fontSpecs ($roboto, 1.4rem, 500, $secondaryFontColor);
 }
 
-//labels, buttons, icon
+//labels, buttons, icon, p
 label {
-    @include fontSpecs ($roboto, 2.5rem, 400, $primaryBackgroundColor);
+    @include fontSpecs ($shadowsLight, 2.5rem, 400, $secondaryBackgroundColor);
 }
 
 .gen-btn {
-    @include fontSpecs ($rubik, 3rem, 500, $primaryFontColor);
+    @include fontSpecs ($shadowsLight, 3rem, 500, $primaryFontColor);
 }
 
 .follow-btn {
@@ -42,6 +42,10 @@ label {
 
 .fa-twitter-square {
     @include fontSpecs ($roboto, 3rem, 400, $accentColor);
+}
+
+p {
+    @include fontSpecs ($roboto, 2rem, 400, $primaryFontColor);
 }
 
 

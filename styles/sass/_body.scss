@@ -2,7 +2,7 @@
     background-color: $secondaryBackgroundColor;
     display: inline-block;
     width: 60%;
-    margin: 2% 20% 5% 20%; 
+    margin: 1% 20% 5% 20%; 
     text-align: left;
     border: 1px $accentColor solid;
     padding: 45px;
@@ -25,10 +25,11 @@ img {
 
 .follow-btn {
     border: 2px solid $accentColor;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px 0px 15px;
     margin-left: 210px;
     position: relative;
     bottom: 30px;
+    font-size: 1.8rem;
 }
 
 .follow-btn:hover {

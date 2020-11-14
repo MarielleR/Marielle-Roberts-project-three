@@ -241,7 +241,7 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "Shadows Into Light", cursive;
   font-size: 1.6rem;
   font-weight: 400;
   color: #1e2333;
@@ -256,17 +256,17 @@ h4 {
 }
 
 h1 {
-  font-family: "Rubik", sans-serif;
-  font-size: 4rem;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 4.5rem;
   font-weight: 500;
-  color: #bfc5d9;
+  color: #ffffff;
 }
 
 h2 {
-  font-family: "Rubik", sans-serif;
-  font-size: 3rem;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 3.5rem;
   font-weight: 500;
-  color: #bfc5d9;
+  color: #ffffff;
 }
 
 h3 {
@@ -284,14 +284,14 @@ h4 {
 }
 
 label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Shadows Into Light", cursive;
   font-size: 2.5rem;
   font-weight: 400;
-  color: #bfc5d9;
+  color: #ffffff;
 }
 
 .gen-btn {
-  font-family: "Rubik", sans-serif;
+  font-family: "Shadows Into Light", cursive;
   font-size: 3rem;
   font-weight: 500;
   color: #1e2333;
@@ -309,6 +309,13 @@ label {
   font-size: 3rem;
   font-weight: 400;
   color: #1da1f2;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #1e2333;
 }
 
 /* GLOBAL STYLES */
@@ -349,16 +356,16 @@ body {
 
 body {
   background-image: url("./photo-1603145733316-7462e5ecd80d.jpeg");
+  background-size: auto;
 }
 
 .header-gen {
   background-color: #1da1f2;
-  color: #ffffff;
   display: inline-block;
   width: 60%;
   margin: 1% 20% 3% 20%;
   text-align: center;
-  border: #808bb3;
+  border: 4px solid #bfc5d9;
   border-radius: 3%;
 }
 
@@ -416,7 +423,7 @@ label:focus {
   background-color: #ffffff;
   display: inline-block;
   width: 60%;
-  margin: 2% 20% 5% 20%;
+  margin: 1% 20% 5% 20%;
   text-align: left;
   border: 1px #1da1f2 solid;
   padding: 45px;
@@ -443,10 +450,11 @@ img {
 
 .follow-btn {
   border: 2px solid #1da1f2;
-  padding: 10px 15px 10px 15px;
+  padding: 10px 15px 0px 15px;
   margin-left: 210px;
   position: relative;
   bottom: 30px;
+  font-size: 1.8rem;
 }
 
 .follow-btn:hover {
@@ -466,6 +474,105 @@ footer {
 }
 
 footer a {
-  -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
+  font-family: "Shadows Into Light", cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+footer:hover,
+footer:focus {
+  background-color: #1da1f2;
+}
+
+@media (max-width: 1366px) {
+  .your-tweet-container {
+    position: relative;
+  }
+  .follow-btn {
+    border: 2px solid #1da1f2;
+    padding: 5px 17px;
+    margin-left: 0px;
+    position: absolute;
+    left: 95px;
+    bottom: 43px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .radio-1,
+  .radio-2,
+  .radio-3 {
+    padding-left: 35%;
+  }
+  .button-container {
+    margin-left: 22%;
+  }
+}
+
+@media (max-width: 768px) {
+  .dynamic-tweet p {
+    font-size: 1.6rem;
+  }
+  footer a {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 652px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .radio-1,
+  .radio-2,
+  .radio-3 {
+    font-size: 1.6;
+  }
+  .gen-btn {
+    font-size: 1.8rem;
+  }
+  .your-tweet-container {
+    -webkit-box-shadow: 5px 5px 8px #bfc5d9;
+            box-shadow: 5px 5px 8px #bfc5d9;
+  }
+}
+
+@media (max-width: 480px) {
+  .radio-1,
+  .radio-2,
+  .radio-3 {
+    padding-left: 25%;
+  }
+  .button-container {
+    margin-left: 15%;
+  }
+  .row-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .handle {
+    margin-left: 0;
+  }
+  .row-1 h3,
+  .row-1 h4 {
+    font-size: 1.6rem;
+  }
+  .row-1 img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 15px;
+  }
 }

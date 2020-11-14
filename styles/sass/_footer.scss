@@ -4,6 +4,11 @@ footer {
     margin: 0;
     text-align: center;
         & a {
-            transform: rotate(20deg);;
+            @include fontSpecs ($shadowsLight, 4rem, 400, $secondaryBackgroundColor);
         }
+}
+
+footer:hover,
+footer:focus {
+    background-color: $accentColor;
 }
