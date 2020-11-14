@@ -3,6 +3,7 @@
 //Create an event listener for the submit button, that will grab the value of the selection's value
 //Use math.random to randomly select a tweet from the chosen topic's array
 //Display the tweet in a format that resembles an actual tweet
+//Create an event listener so that twitter icons turn a bright color, when they are clicked on AND when doubled clicked on, the color goes back to the default black
 
 const viralTweets = {
     code: [
@@ -42,16 +43,22 @@ const viralTweets = {
 
 $(document).ready(function () {
 
+//event listeners for icon colour change
 $("i").on('click', function(){
     $(this).css("color", "orangered");
 });
 
-//randomize function up here
+$("i").on('dblclick', function () {
+    $(this).css("color", "#1e2333");
+});
+
+//randomize for tweet below
 function randomTweet(outputArray) {
     const shuffle = Math.floor(Math.random() * outputArray.length);
     return outputArray[shuffle];
 }
 
+//event listener for topic selection/dynamic html
 $('form').on('submit', function(event) {
     event.preventDefault();
     console.log('intialize', event);

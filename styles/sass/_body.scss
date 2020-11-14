@@ -36,11 +36,12 @@ img {
     background-color: $primaryBackgroundColor;
 }
 
-//Dynamic Text Styles
-
-
-//Row-3
 .row-3 h4 {
     margin-top: 20px;
     margin-bottom: 10px;
+}
+
+.fa-twitter-square:hover,
+.fa-twitter-square:focus {
+    color: orangered;
 }
